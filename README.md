@@ -36,6 +36,24 @@ node bin/index.js my-app   # 直接執行
 npm link                   # 或連結成全域的 nextforge 指令
 ```
 
+## 發布新版本
+
+修改程式碼並確認可以正常執行後，依序執行：
+
+```bash
+npm version patch          # 更新版本號，並自動建立 commit 與 git tag
+git push --follow-tags     # 推送 commit 與 tag 到 GitHub
+npm publish                # 發布到 npm（需在瀏覽器中完成 2FA 驗證）
+```
+
+`npm version` 可依變更大小選擇：
+
+- `patch`：修正錯誤（0.8.0 → 0.8.1）
+- `minor`：新增功能（0.8.0 → 0.9.0）
+- `major`：不相容的變更（0.8.0 → 1.0.0）
+
+發布後 npm 可能需要幾分鐘處理，可以用 `npm view @vince115/nextforge version` 確認是否已更新。
+
 ## 目前開發狀態 (v0.8)
 
 核心採用**插件系統**（Plugin-based architecture），v0.8 把各插件修正到可以實際使用：
