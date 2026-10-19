@@ -4,7 +4,7 @@
   "description": "Interactive CLI to scaffold Next.js apps with a plugin-based engine (Auth, Redux, shadcn/ui)",
   "type": "module",
   "bin": {
-    "nextforge": "./bin/index.js"
+    "nextforge": "bin/index.js"
   },
   "files": [
     "bin",
