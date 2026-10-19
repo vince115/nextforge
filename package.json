@@ -1,0 +1,50 @@
+{
+  "name": "@vince115/nextforge",
+  "version": "0.8.0",
+  "description": "Interactive CLI to scaffold Next.js apps with a plugin-based engine (Auth, Redux, shadcn/ui)",
+  "type": "module",
+  "bin": {
+    "nextforge": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "core",
+    "lib",
+    "plugins",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "keywords": [
+    "nextjs",
+    "cli",
+    "scaffold",
+    "create-next-app",
+    "nextauth",
+    "redux",
+    "shadcn"
+  ],
+  "author": "vince115",
+  "license": "MIT",
+  "homepage": "https://github.com/vince115/nextforge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vince115/nextforge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vince115/nextforge/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "execa": "^9.3.0",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
